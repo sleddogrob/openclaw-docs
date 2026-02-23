@@ -1,11 +1,9 @@
 ---
 layout: home
-
 hero:
   name: "My OpenClaw Notes"
-  text: "Open source "
+  text: "Open source"
   tagline: "The AI that actually does things."
-  details: Looking for the official OpenClaw <a href="https://openclaw.ai/">site</a>?
   actions:
     - theme: brand
       text: Get Started
@@ -13,7 +11,6 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/sleddogrob/openclaw-docs
-
 features:
   - icon: ⚡
     title: Feature One
@@ -25,3 +22,5 @@ features:
     title: Feature Three
     details: Describe the third key feature or benefit here.
 ---
+
+Looking for the official OpenClaw [site](https://openclaw.ai/)?

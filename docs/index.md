@@ -5,7 +5,7 @@ hero:
   text: "My personal field notes"
   tagline: "OpenClaw explained, simplified."
   image:
-    src: /380x207-claw.png
+    src: /logo.svg
     alt: OpenClaw Logo
   actions:
     - theme: brand

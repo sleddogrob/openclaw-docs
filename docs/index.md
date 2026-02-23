@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "OpenClaw"
-  text: "Open source · Built to last"
-  tagline: Add a short tagline describing what OpenClaw does.
+  name: "My OpenClaw Notes"
+  text: "Open source · [Official Website Here](https://https://openclaw.ai/)"
+  tagline: "The AI that actually does things."
   actions:
     - theme: brand
       text: Get Started

@@ -1,9 +1,9 @@
 ---
 layout: home
 hero:
-name: "OpenClaw Notes"
-text: "My personal field notes"
-tagline: "OpenClaw explained, simplified."
+  name: "OpenClaw Notes"
+  text: "My personal field notes"
+  tagline: "OpenClaw explained, simplified."
   actions:
     - theme: brand
       text: Get Started
@@ -23,5 +23,5 @@ features:
     details: Describe the third key feature or benefit here.
 ---
 
-Looking for the official OpenClaw [site](https://openclaw.ai/)?
-We are not affiliated in anyway with the OpenClaw team or foundation.
+- Looking for the official OpenClaw [site](https://openclaw.ai/)?
+- We are not affiliated in anyway with the OpenClaw team or foundation.

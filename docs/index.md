@@ -1,9 +1,9 @@
 ---
 layout: home
 hero:
-  name: "My OpenClaw Notes"
-  text: "Open source"
-  tagline: "The AI that actually does things."
+name: "OpenClaw Notes"
+text: "My personal field notes"
+tagline: "OpenClaw explained, simplified."
   actions:
     - theme: brand
       text: Get Started
@@ -24,3 +24,4 @@ features:
 ---
 
 Looking for the official OpenClaw [site](https://openclaw.ai/)?
+We are not affiliated in anyway with the OpenClaw team or foundation.

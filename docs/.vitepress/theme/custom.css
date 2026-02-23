@@ -2,7 +2,7 @@
  * OpenClaw brand colors - matching openclaw.ai red theme
  */
 :root {
-  /* Hero name gradient: light salmon → deep red, matching OpenClaw logo */
+  /* Hero name gradient: light salmon to deep red */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ff8a80 10%, #cc1f0a 90%);
 
@@ -11,6 +11,17 @@
   --vp-c-brand-2: #b82000;
   --vp-c-brand-3: #e03a20;
 
-  /* Soft red glow behind hero image (optional) */
-  --vp-home-hero-image-background-image: radial-gradient(circle, rgba(204,31,10,0.2) 0%, transparent 70%);
+  /* Logo uses brand red */
+  --vp-nav-logo-color: #d42b10;
+}
+
+/* Nav bar logo color */
+.VPNavBar .logo {
+  color: var(--vp-c-brand-1);
+}
+
+/* Hero image logo color */
+.VPHero .image-container img,
+.VPHero .image-container svg {
+  color: var(--vp-c-brand-1);
 }

@@ -1,34 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { readdirSync, readFileSync } from 'fs'
-import { resolve, basename } from 'path'
-import { fileURLToPath } from 'url'
-
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
-const docsDir = resolve(__dirname, '..')
-
-function getTitle(filePath) {
-  try {
-    const content = readFileSync(filePath, 'utf-8')
-    const match = content.match(/^#\s+(.+)$/m)
-    return match ? match[1].trim() : basename(filePath, '.md')
-  } catch {
-    return basename(filePath, '.md')
-  }
-}
-
-function getSidebarItems(dirPath, urlBase) {
-  try {
-    return readdirSync(dirPath)
-      .filter(f => f.endsWith('.md') && f !== 'index.md')
-      .sort()
-      .map(file => ({
-        text: getTitle(resolve(dirPath, file)),
-        link: `${urlBase}/${basename(file, '.md')}`
-      }))
-  } catch {
-    return []
-  }
-}
 
 export default defineConfig({
   title: 'OpenClaw',
@@ -38,24 +8,70 @@ export default defineConfig({
     logo: '/logo.svg',
     nav: [
       { text: 'Guide', link: '/guide/' },
-      { text: 'API Reference', link: '/api/' },
+      { text: 'Reference', link: '/reference/' },
       { text: 'GitHub', link: 'https://github.com/sleddogrob/openclaw-docs' }
     ],
     sidebar: {
-      '/guide/': [{
-        text: 'Guide',
-        items: [
-          { text: 'Introduction', link: '/guide/' },
-          ...getSidebarItems(resolve(docsDir, 'guide'), '/guide')
-        ]
-      }],
-      '/api/': [{
-        text: 'API Reference',
-        items: [
-          { text: 'Overview', link: '/api/' },
-          ...getSidebarItems(resolve(docsDir, 'api'), '/api')
-        ]
-      }]
+      '/guide/': [
+        {
+          text: 'Introduction',
+          collapsed: false,
+          items: [
+            { text: 'What is OpenClaw?', link: '/guide/' },
+            { text: 'Getting Started', link: '/guide/quick-start' },
+            { text: 'Installation', link: '/guide/installation' }
+          ]
+        },
+        {
+          text: 'Core Concepts',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/guide/concepts' },
+            { text: 'Configuration', link: '/guide/configuration' },
+            { text: 'Architecture', link: '/guide/architecture' }
+          ]
+        },
+        {
+          text: 'Customization',
+          collapsed: false,
+          items: [
+            { text: 'Theming', link: '/guide/theming' },
+            { text: 'Plugins', link: '/guide/plugins' }
+          ]
+        },
+        {
+          text: 'Advanced',
+          collapsed: true,
+          items: [
+            { text: 'Advanced Usage', link: '/guide/advanced' },
+            { text: 'FAQ', link: '/guide/faq' }
+          ]
+        }
+      ],
+      '/reference/': [
+        {
+          text: 'Reference',
+          items: [
+            { text: 'Overview', link: '/reference/' },
+            { text: 'Configuration', link: '/reference/config' },
+            { text: 'CLI', link: '/reference/cli' },
+            { text: 'Site Config', link: '/reference/site-config' },
+            { text: 'Frontmatter Config', link: '/reference/frontmatter' },
+            { text: 'Runtime API', link: '/reference/runtime-api' }
+          ]
+        },
+        {
+          text: 'Default Theme Config',
+          items: [
+            { text: 'Overview', link: '/reference/default-theme' },
+            { text: 'Nav', link: '/reference/default-theme-nav' },
+            { text: 'Sidebar', link: '/reference/default-theme-sidebar' },
+            { text: 'Home Page', link: '/reference/default-theme-home' },
+            { text: 'Footer', link: '/reference/default-theme-footer' },
+            { text: 'Search', link: '/reference/default-theme-search' }
+          ]
+        }
+      ]
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sleddogrob/openclaw-docs' }

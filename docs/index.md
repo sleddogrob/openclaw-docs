@@ -4,6 +4,9 @@ hero:
   name: "OpenClaw Notes"
   text: "My personal field notes"
   tagline: "OpenClaw explained, simplified."
+  image:
+    src: /logo.svg
+    alt: OpenClaw Logo
   actions:
     - theme: brand
       text: Get Started
@@ -23,5 +26,4 @@ features:
     details: Describe the third key feature or benefit here.
 ---
 
-- Looking for the official OpenClaw [site](https://openclaw.ai/)?
-- We are not affiliated in anyway with the OpenClaw team or foundation.
+Looking for the official OpenClaw [site](https://openclaw.ai/)?

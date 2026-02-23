@@ -5,7 +5,7 @@ export default defineConfig({
   description: 'Open source project documentation',
   cleanUrls: true,
   themeConfig: {
-    logo: '/200x109-claw.png',
+    logo: '/logo-nav.png',
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'Reference', link: '/reference/' },

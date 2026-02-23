@@ -3,8 +3,9 @@ layout: home
 
 hero:
   name: "My OpenClaw Notes"
-  text: "Open source · [Official Website Here](https://https://openclaw.ai/)"
+  text: "Open source "
   tagline: "The AI that actually does things."
+  Looking for the official OpenClaw <a href="https://openclaw.ai/">site</a>?
   actions:
     - theme: brand
       text: Get Started

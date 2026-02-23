@@ -5,13 +5,13 @@ hero:
   text: "My personal field notes"
   tagline: "OpenClaw explained, simplified."
   image:
-        src: /380x207-claw.png
+    src: /380x207-claw.png
     alt: OpenClaw Logo
   actions:
     - theme: brand
       text: Get Started
       link: /guide/
-    - theme: alt
+    - theme: al
       text: View on GitHub
       link: https://github.com/sleddogrob/openclaw-docs
 features:

@@ -10,4 +10,5 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=builder /app/docs/.vitepress/dist /usr/share/nginx/html
 EXPOSE 80
+# cache bust: v2
 CMD ["nginx", "-g", "daemon off;"]

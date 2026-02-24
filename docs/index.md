@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: "My OpenClaw Notes"
-  text: "Things I wish someone told me"
+  tagline: "Things I wish someone told me"
   image:
     src: /380x207-claw.png
     alt: OpenClaw Logo

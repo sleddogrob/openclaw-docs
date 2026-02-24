@@ -1,9 +1,8 @@
 ---
 layout: home
 hero:
-  name: "OpenClaw Notes"
-  text: "My personal field notes"
-  tagline: "OpenClaw explained, simplified."
+  name: "My OpenClaw Notes"
+  text: "Things I wish someone told me"
   image:
     src: /380x207-claw.png
     alt: OpenClaw Logo
